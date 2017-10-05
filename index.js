@@ -86,6 +86,10 @@ module.exports.setAnnotation = setAnnotation;
  */
 module.exports.logger = logger;
 /**
+ * @type {logger}
+ */
+module.exports.log = logger;
+/**
  * @type {formatter}
  */
 module.exports.formatter = formatter;

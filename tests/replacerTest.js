@@ -1,6 +1,6 @@
 const Assert = require("assert");
-const formatter = require("../logger").formatter;
-const setAnnotation = require("../logger").setAnnotation;
+const formatter = require("../index").formatter;
+const setAnnotation = require("../index").setAnnotation;
 
 require("simple-tests-js").run({
     test1: {
