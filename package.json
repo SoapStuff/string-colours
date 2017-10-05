@@ -1,0 +1,17 @@
+{
+  "name": "colours-logger",
+  "version": "1.0.0",
+  "description": "colours",
+  "main": "inde\u001b.ex.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "colors"
+  ],
+  "author": "Arjan Seijs",
+  "license": "ISC",
+  "devDependencies": {
+    "simple-tests-js": "^1.0.3"
+  }
+}
