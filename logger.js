@@ -52,7 +52,7 @@ var formatter = function (string) {
         var secondPart = string.substring(match.index + match[0].length, string.length);
         string = firstPart + format + secondPart;
     }
-    return string;
+    return string + getCode("reset");
 };
 
 /**
