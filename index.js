@@ -45,7 +45,7 @@ var formatter = function (string) {
     while (string.match(regex)) {
         var match = regex.exec(string);
         var markUp = match[0].substring(2, match[0].length - 1);
-        var markups = markUp.trim().split(",");
+        var markups = markUp.trim().split(/[.,\s]/);
         var format = getCodes(markups);
 
         var firstPart = string.substring(0, match.index);
