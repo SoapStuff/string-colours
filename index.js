@@ -60,7 +60,7 @@ var formatter = function (string) {
  * @param {string} char
  */
 var setAnnotation = function (char) {
-    if (typeof char !== "string" && char.length !== 1) {
+    if (typeof char !== "string" || char.length !== 1) {
         throw new Error("Invalid Argument Exception: input should be a string with only 1 character");
     }
     var allowed = ["!","@","#","&","~"];
