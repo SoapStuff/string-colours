@@ -1,6 +1,6 @@
 {
   "name": "colours-logger",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "colours",
   "main": "index.js",
   "scripts": {

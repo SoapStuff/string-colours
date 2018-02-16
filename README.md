@@ -27,15 +27,18 @@ console.log(formatted);
 ```
 #### Changing prefix.
 You can change the annotation to one of the following characters:
-`var allowed = ["!","@","#","&","~"];`
+`allowed = ["!","@","#","&","~"];`
 Use this only when needed since this is can break compatibility between other packages.
 ```javascript
 const colours = require("colours-logger");
 colours.setAnnotation("#");
+// You can now use "#{color}"
 ```
 
+
+
 #### Disabling
-Disable colours with passing the no --disable-colour flag to the node arguments.
+Disable colours with passing the --disable-colour flag to the node arguments.
 
 #### Allowed styles
 
