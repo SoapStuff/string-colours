@@ -1,3 +1,4 @@
+var enabled = true;
 var map = {
     reset: [0, 0],
     bold: [1, 22],
@@ -35,19 +36,24 @@ var map = {
  * @param {boolean} [reset] - If you want to reset this style.
  */
 var getCode = function (markup, reset) {
+    if (!enabled) return "";
     var _style = map[markup];
     if (!_style) {
-        console.error("Unsupported text markup: "+ markup);
+        console.error("Unsupported text markup: " + markup);
         return "";
     }
     var i = 0;
     if (reset === true) {
         i = 1;
     }
-    return "\u001b["+_style[i]+"m";
+    return "\u001b[" + _style[i] + "m";
 };
 
 /**
  * @type {getCode}
  */
 module.exports.getCode = getCode;
+
+(function () {
+    enabled = process.argv.indexOf("--disable-colour") === -1;
+})();

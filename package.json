@@ -1,17 +1,29 @@
 {
   "name": "colours-logger",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "colours",
-  "main": "inde\u001b.ex.js",
+  "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "node tests/replacerTest.js"
   },
   "keywords": [
-    "colors"
+    "colors",
+    "loggin",
+    "string",
+    "formatter",
+    "string-formatter"
   ],
   "author": "Arjan Seijs",
   "license": "ISC",
   "devDependencies": {
     "simple-tests-js": "^1.0.3"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SoapStuff/string-colours"
+  },
+  "bugs": {
+    "url": "https://github.com/SoapStuff/string-colours/issues"
+  },
+  "homepage": "https://github.com/SoapStuff/string-colours#readme"
 }
